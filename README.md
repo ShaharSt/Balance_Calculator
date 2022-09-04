@@ -1,18 +1,15 @@
-## Getting Started
+Balance Calculator Exercise
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
-## Folder Structure
+The program  reads customers balance transactions from an input.txt file 
+and prints the total balance for each customer according to the following rules:
 
-The workspace contains two folders by default, where:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Read the transactions from the input file into a queue.
+Once done, two threads are processing the transactions.
+Another thread is waiting for them to finish processing the transactions and then prints the total balance to the console.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Notes:
+* In the input file, each line contains a transaction_id(not unique), customer_name, and a sum.
+* The final balance output will be printed in the format of customer_name: total_balance.
