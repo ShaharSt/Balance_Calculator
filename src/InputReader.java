@@ -12,8 +12,8 @@ public class InputReader  {
             
             //The input file locate in a local input directory
             String basePath = new File("").getAbsolutePath();
-            fileReader = new FileReader(basePath+"\\input\\input.txt");
-            bufferreader = new BufferedReader(new FileReader(basePath+"\\input\\input.txt"));
+            fileReader = new FileReader(basePath+"/input/input.txt"); // this does not work for linux, fixed backslash
+            bufferreader = new BufferedReader(new FileReader(basePath+"/input/input.txt"));
 
             //Read the input file line by line
             while ((line = bufferreader.readLine()) != null) {     
